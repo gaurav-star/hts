@@ -1,0 +1,9 @@
+import { AuthResponses } from "./auth.types";
+
+export const AUTH_MESSAGE = {
+  INVALID_CREDENTIALS: new AuthResponses(401, "INVALID CREDENTIALS"),
+  USER_NOT_FOUND: new AuthResponses(404, "USER NOT FOUND"),
+  USER_ALREADY_EXIST: new AuthResponses(409, "USER ALREADY EXISTS PLEASE LOGIN WITH YOUR CREDENTIALS"),
+  USER_ADDED_SUCCESSFULLY: new AuthResponses(201, "USER ADDED SUCCESSFULLY"),
+  USER_LOGGED_IN: new AuthResponses(201, "USER LOGGED-IN SUCCESSFULLY"),
+};
